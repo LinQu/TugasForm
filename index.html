@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body>
+    <fieldset>
+      <form action="">
+        <fieldset>
+          <legend>Nama</legend>
+          <input type="text" id="nama" name="name" />
+        </fieldset>
+        <fieldset>
+          <legend>Nomor Handphone</legend>
+          <input type="text" id="nohp" name="phone" />
+        </fieldset>
+        <fieldset>
+          <legend>Jenis kelamin</legend>
+          <select name="jk" id="jk">
+            <option value="">-- Pilih Jenis Kelamin --</option>
+            <option value="Laki - Laki">Laki - Laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </fieldset>
+      </form>
+      <input type="button" value="Kirim Data" onclick="tambah()" id="Kirim" />
+      <h1>Tabel Data</h1>
+      <table id="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>No Handphone</th>
+            <th>Jenis Kelamin</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="data-table">
+        </tbody>
+    </fieldset>
+  </body>
+</html>
